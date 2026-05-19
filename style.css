@@ -449,7 +449,148 @@ img{
 .explore:hover{
     transform: scale(1.1);
 }
+@media (max-width: 768px) {
+    /* Scale general headings so they don't break lines awkwardly */
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.6rem; }
+    h3 { font-size: 1.2rem; }
 
+    header {
+        padding: 40px 15px;
+        margin-bottom: 20px;
+    }
+    header h1 { font-size: 2.5rem; }
+
+    /* Transform navigation to fit narrow displays */
+    .sec1 {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .sec1-1, .sec1-2 {
+        float: none;
+        left: auto;
+        right: auto;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
+    }
+    .sec1-2 {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .btn1, .btn2, .btn3, .btn4 {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-left: 0;
+    }
+
+    /* Stack Home Grid contents vertically */
+    #home {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding-top: 20px;
+        gap: 20px;
+    }
+    .home-text {
+        grid-column: 1;
+        grid-row: 2; 
+    }
+    .home-img {
+        grid-column: 1;
+        grid-row: 1; 
+        display: flex;
+        justify-content: center;
+    }
+    .profile-img {
+        width: 240px;
+        height: 240px;
+        margin-right: 0;
+        margin-top: 10px;
+        float: none;
+    }
+    .sec2-1 {
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    #name { font-size: 36px; }
+    .job { font-size: 20px; }
+    .about-me { font-size: 16px; }
+    .sec2-1 .btn1 { font-size: 22px !important; }
+
+    /* Un-stack About container and make card full width */
+    #about {
+        flex-direction: column;
+        padding-top: 30px;
+        margin-right: 0;
+        gap: 25px;
+    }
+    #h1-2 {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #p-about {
+        font-size: 16px;
+        text-align: center;
+    }
+    .info-sec {
+        width: 100%;
+        padding: 20px;
+    }
+    .info-sec h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .info-sec h2:hover {
+        transform: none;
+    }
+    .age, .location, .school, .Email {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .age-text, .location-text, .school-text, .Email-text {
+        align-items: center;
+    }
+    .info-sec button {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+
+    /* Keep marquee size clean on smaller items */
+    .skills-title h1 { font-size: 3rem !important; }
+    .skill-item {
+        width: 260px;
+        height: 380px;
+    }
+
+    /* Stack project cards vertically so they map fluidly */
+    .project-section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .project-item {
+        width: 100%;
+        max-width: 450px;
+        height: auto; 
+    }
+    .project {
+        height: 220px;
+    }
+    .explore {
+        font-size: 20px;
+        padding: 10px 24px;
+    }
+}
 
 
 
