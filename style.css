@@ -446,6 +446,9 @@ img{
     margin-top: 30px;
     transition: 0.3s ease;
 }
+.explore:hover{
+    transform: scale(1.1);
+}
 
 
 
