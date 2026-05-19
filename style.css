@@ -405,6 +405,7 @@ img{
     transition: 0.4s;
     box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
     backdrop-filter: blur(10px);
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -445,18 +446,7 @@ img{
     margin-top: 30px;
     transition: 0.3s ease;
 }
-.btn1 ,.btn2,.btn3,.btn4{
-    padding: 12px 32px;
-    border: 1px solid #8b5cf6;
-    
-    border-radius: 12px;
-    background: linear-gradient(90deg, #a855f7, #3b82f6);
-    color: white;
-    font-size: 32px;
-    cursor: pointer;
-    margin-left: 15px;
-    transition: 0.3s ease;
-}
+
 
 
 
